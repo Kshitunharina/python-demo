@@ -74,7 +74,26 @@ for num in range(low, high + 1):
 
 print(f"Number of prime numbers between {low} and {high} is: {prime_count}")
   
-    
+  #Write a program to check how many times a character is repeated in a word?
+   
+   # Get input from user
+word = input("Enter a word: ")
+
+# Dictionary to store character counts
+char_count = {}
+
+# Loop through each character in the word
+for char in word:
+    if char in char_count:
+        char_count[char] += 1  # Increment if already in dictionary
+    else:
+        char_count[char] = 1   # Add new entry
+
+# Display results
+print("Character repetitions in the word:")
+for char, count in char_count.items():
+    print(f"'{char}': {count} time(s)")
+ 
     
 
 
